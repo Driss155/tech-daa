@@ -59,22 +59,16 @@ function Contuct() {
                     <div>
                         <div className='contuct-info-img'> <img src='/images/contuct/location-black.svg' alt='location icon'/> </div>
                         <div className='contuct-info-text-1'>
-                            <p>localitasion :</p>
-                            <p>Oujda</p>
                         </div>
                     </div>
                     <div className='contuct-info-center'>
                         <div className='contuct-info-img'> <img src='/images/contuct/appel-black.svg' alt='phone icon'/> </div>
                         <div className='contuct-info-text'>
-                            <p>Whatssap :</p>
-                            <p>+212 772 570 811</p>
                         </div>
                     </div>
                     <div>
                         <div className='contuct-info-img'> <img src='/images/contuct/email-black.svg' alt='email icon'/> </div>
                         <div className='contuct-info-text-2'>
-                            <p>Email :</p>
-                            <p>tech.d.agency@gmail.com</p>
                         </div>
                     </div>
                 </div>
