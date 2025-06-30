@@ -1,12 +1,9 @@
-// src/Component/Footer/Footer.js
-
 import './footer.css';
 
-// 1. Accept all the new props from Home.js
 function Footer({ onHomeClick, onServiceClick, onAboutClick, onProjectsClick, onContactClick }) {
 
     const handleLinkClick = (e, clickFunction) => {
-        e.preventDefault(); // Prevents page from jumping to the top
+        e.preventDefault();
         clickFunction();
     };
 
@@ -33,7 +30,6 @@ function Footer({ onHomeClick, onServiceClick, onAboutClick, onProjectsClick, on
                     <div className='footer-column'>
                         <p className="footer-heading">Portfolio</p>
                         <ul>
-                            {/* 3. Link to the real project URLs */}
                             <li><a href='https://group-sigma.com/' target="_blank" rel="noopener noreferrer">Group Sigma</a></li>
                             <li><a href='https://www.milorecipes.com/' target="_blank" rel="noopener noreferrer">Milo Recipes</a></li>
                             <li><a href='https://totalwebx.com/smm/' target="_blank" rel="noopener noreferrer">TotalWebX SMM</a></li>
@@ -51,7 +47,6 @@ function Footer({ onHomeClick, onServiceClick, onAboutClick, onProjectsClick, on
                 </div>
             </div>
             <div className='footer-copy'>
-                {/* 5. The copyright year is now always current */}
                 <p>© {new Date().getFullYear()} TECH-DA, Inc. All Rights Reserved.</p>
             </div>
         </div>

@@ -9,9 +9,6 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    /* position: sticky;
-    top: 0;
-    z-index: 1; */
     position: fixed;
     top: 0;
     left: 0;
@@ -19,13 +16,6 @@ body {
     z-index: 1000;
     backdrop-filter: blur(8px);
 }
-/*
- position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 1000;
-*/
 .logo img {
     width: 150px;
 }

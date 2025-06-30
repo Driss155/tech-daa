@@ -55,7 +55,6 @@ function Home() {
                     </div>
                 </div>
 
-                {/* === TEXT UPDATED HERE === */}
                 <div className='tech-body'>
                     <p>
                         At Tech-DA, we bring your digital ideas to life from simple websites to smart platforms powered by AI. We specialize in custom web development and AI solutions, tailored to your needs, your goals, and your budget. Whether you need a showcase website, an online store, or AI features that automate and boost your business   <br></br>we do it all.
