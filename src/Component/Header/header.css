@@ -17,7 +17,7 @@
   text-align: center;     /* Centers all the text */
   gap: 15px;              /* Adds nice spacing between elements */
   color: white;
-  margin-bottom: 30px;
+  margin-bottom: 140px;
 }
 
 .header-logo img {
@@ -88,4 +88,10 @@
   opacity: 1;
   transform: translateY(0);
   transition: all 2s ease;
+}
+
+@media (max-width : 400px) {
+  .header-all {
+  margin-bottom: 0px;
+}
 }
