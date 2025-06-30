@@ -1,0 +1,155 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+.contuct-info-img img {
+    width: 25px;
+    padding: 3px 4px;
+}
+.contuct-info-img {
+    padding: 15px 18px;
+    background-color: #2F80ED;
+    border-radius: 50%;
+    margin-bottom: 13px;
+}
+.contuct-info-content {
+    display: flex;
+    margin-left: -111px;
+    justify-content: center;
+    gap: 46px;
+}
+.contuct-info-text {
+    position: absolute;
+    color: white;
+}
+.contuct-info-text p:nth-child(2) {
+    margin-left: -37px;
+}
+.contuct-info-text-2 {
+    position: absolute;
+    color: white;
+}
+.contuct-info-text-2 p:nth-child(2) {
+    margin-left: -5px;
+}
+.contuct-info-text-1 {
+    position: absolute;
+    color: white;
+}
+.contuct-info-text-2 p:nth-child(2) {
+    margin-left: -5px;
+}
+.contuct-info-header p {
+    text-align: center;
+    font-size: xx-large;
+    font-weight: bold;
+    margin: 35px 0;
+    color: white;
+}
+.main-2 {
+    height: 100px;
+}
+/* Contuct Form */
+.contuct-frm-content {
+    text-align: center;
+}
+.contuct-frm-content form input {
+    width: 80%;
+    padding: 14px 0;
+    border: none;
+    outline: none;
+    margin: 10px 0;
+    background-color: rgba(255, 255, 255, 0.03);
+    padding-left: 15px;
+    font-weight: bold;
+    color: white;
+    caret-color: white;
+}
+.contuct-frm-content form textarea {
+    width: 80%;
+    border: none;
+    outline: none;
+    background-color: rgba(255, 255, 255, 0.03);
+    padding-left: 15px;
+    font-weight: bold;
+    color: white;
+    caret-color: white;
+}
+.contuct-frm-content button {
+    width: 80%;
+    border: none;
+    padding: 10px 0;
+    border-radius: 4px;
+    font-weight: bold;
+    background-color: #2F80ED;
+    cursor: pointer;
+}
+.contuct-frm-header p {
+    text-align: center;
+    font-size: xx-large;
+    font-weight: bold;
+    color: white;
+}
+/* Container */
+.contuct-container {
+    background-color: black;
+    padding: 60px 0;
+}
+@media (min-width:1050px) {
+    .contuct-info {
+        width: 77%;
+        margin: auto;
+    }
+    .contuct-info-content {
+        justify-content: center;
+    }
+    .contuct-info-center {
+        margin: 0 70px;
+    }
+}
+@media (min-width:1200px) {
+    .contuct-info {
+        width: 50%;
+        margin: auto;
+    }
+    .contuct-info-content {
+        justify-content: center;
+    }
+    .contuct-info-center {
+        margin: 0 70px;
+    }
+}
+@media (min-width:1500px) {
+    .contuct-info {
+        width: 50%;
+        margin: auto;
+    }
+    .contuct-info-content {
+        justify-content: center;
+    }
+    .contuct-info-center {
+        margin: 0 70px;
+    }
+}
+@media (min-width:1501px) {
+    .contuct-info {
+        width: 40%;
+        margin: auto;
+    }
+    .contuct-info-content {
+        justify-content: center;
+    }
+    .contuct-info-center {
+        margin: 0 70px;
+    }
+}
+.submission-message {
+color: red;
+font-weight: bold;
+margin-top: 15px;
+}
+@media (max-width: 410px) {
+    .contuct-info-text-2 p:nth-child(2){
+        margin-left: -11px;
+    }
+}

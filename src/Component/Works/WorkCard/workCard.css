@@ -1,0 +1,78 @@
+/* src/Component/Works/WorkCard/workCard.css */
+
+.work-card-container {
+  background-color: white;
+  border-radius: 8px; /* Softer radius */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08); /* A more subtle shadow */
+  overflow: hidden;
+  display: flex;
+  flex-direction: column; /* This is crucial for layout */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.work-card-container:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+}
+
+.work-card-img {
+  height: 220px;
+  width: 100%;
+  background-size: cover;
+  background-position: center top; /* Focus on the top of the screenshot */
+  background-repeat: no-repeat;
+  transition: transform 0.4s ease;
+}
+
+.work-card-container:hover .work-card-img {
+  transform: scale(1.05);
+}
+
+.work-card-text {
+  padding: 25px;
+  flex-grow: 1; /* This makes the text area fill available space */
+  display: flex;
+  flex-direction: column;
+}
+
+.work-card-text p:nth-of-type(1) { /* Category */
+  font-size: 0.85rem;
+  color: #555;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin: 0 0 4px 0;
+}
+
+.work-card-text p:nth-of-type(2) { /* Project Name */
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #111;
+  margin: 0 0 12px 0;
+}
+
+.work-card-text p:nth-of-type(3) { /* Description */
+  font-size: 0.95rem;
+  color: #333;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  flex-grow: 1; /* This pushes the button to the bottom */
+}
+
+.go-site-button {
+  display: inline-block;
+  background-color: #1a1a1a;
+  color: white;
+  padding: 12px 28px;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: auto; /* Aligns button to the bottom */
+  align-self: flex-start; /* Aligns button to the left */
+  transition: background-color 0.3s ease;
+}
+
+.go-site-button:hover {
+  background-color: #007bff;
+}

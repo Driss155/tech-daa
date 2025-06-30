@@ -1,0 +1,91 @@
+/* src/Component/Header/header.css */
+
+.header {
+  height: 87vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.header-all {
+  display: flex;
+  flex-direction: column; /* This is the key: stacks everything vertically */
+  align-items: center;    /* Centers everything horizontally */
+  text-align: center;     /* Centers all the text */
+  gap: 15px;              /* Adds nice spacing between elements */
+  color: white;
+  margin-bottom: 140px;
+}
+
+.header-logo img {
+  width: 250px; /* A more balanced logo size */
+  max-width: 100%;
+}
+
+.header-text-1 p {
+  font-size: clamp(2.5rem, 6vw, 4rem); /* Responsive font size */
+  font-weight: 700;
+  line-height: 1.2;
+  margin: 0;
+  /* Crucial for readability on a busy background */
+  text-shadow: 0px 0px 15px rgba(0, 0, 0, 0.7);
+}
+
+.header-text-1 .changing-word {
+  color: #00FFDE;
+  display: inline-block;
+  animation: fade-in-up 0.5s ease;
+}
+
+.header-text-2 p {
+  max-width: 600px; /* Keeps lines from getting too long */
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #e0e0e0;
+  margin-top: 10px;
+  margin-bottom: 25px;
+}
+
+.header-text-2 button {
+  background: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(4px);
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  padding: 14px 40px;
+  border-radius: 50px; /* Pill shape */
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.header-text-2 button:hover {
+  background-color: white;
+  color: black;
+  transform: scale(1.05) translateY(-2px);
+  box-shadow: 0px 8px 20px rgba(0, 255, 222, 0.2);
+}
+
+@keyframes fade-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.header-enter {
+  opacity: 0;
+  transform: translateY(-30px);
+}
+.header-enter-active {
+  opacity: 1;
+  transform: translateY(0);
+  transition: all 2s ease;
+}

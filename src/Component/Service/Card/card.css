@@ -1,0 +1,212 @@
+/* === GENERAL CARD STYLING === */
+.card {
+    display: flex;
+    flex-direction: column; /* Start with mobile-first layout */
+    margin-bottom: 80px;  /* More space between service sections */
+    opacity: 0; /* Start hidden for animation */
+    transform: translateY(20px); /* Start slightly lower for animation */
+    animation: fadeInUp 0.8s ease-out forwards;
+}
+
+/* A simple fade-in animation for each card */
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Stagger the animation for each card */
+.card-container:nth-child(2) .card { animation-delay: 0.2s; }
+.card-container:nth-child(3) .card { animation-delay: 0.4s; }
+.card-container:nth-child(4) .card { animation-delay: 0.6s; }
+
+
+/* === LEFT SIDE - TEXT CONTENT === */
+.card-left {
+    padding: 15px;
+}
+
+.card-left-header p {
+    color: #0d2352; /* A deeper, more professional blue */
+    font-weight: 700; /* Bolder for more impact */
+    font-size: 2rem; /* Using rem units for better scalability */
+    margin-bottom: 10px;
+}
+
+.card-left-body p {
+    font-size: 1.1rem;
+    color: #555; /* A softer gray for the subtitle */
+    line-height: 1.6; /* More space between lines for readability */
+    margin-bottom: 25px;
+}
+
+.card-left-footer ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.card-left-footer li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+    font-size: 1rem;
+    color: #333;
+}
+
+/* This adds a stylish checkmark icon before each service! */
+.card-left-footer li::before {
+    content: '✔'; /* You can use a checkmark or any other icon */
+    color: #2F80ED; /* The blue from your original box-shadow */
+    font-weight: bold;
+    margin-right: 12px;
+    font-size: 1.2rem;
+}
+
+
+/* === RIGHT SIDE - IMAGE === */
+.card-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+}
+
+.card-right img {
+    width: 100%;
+    max-width: 450px; /* Set a max-width for consistency */
+    border-radius: 12px;
+    border: 1px solid #e0e0e0;
+    padding: 5px;
+    background-color: #fff;
+    /* A softer, more modern shadow */
+    box-shadow: 0 10px 30px rgba(47, 128, 237, 0.2);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/* A subtle zoom effect on hover */
+.card-right img:hover {
+    transform: scale(1.03);
+    box-shadow: 0 15px 40px rgba(47, 128, 237, 0.3);
+}
+
+
+/* === RESPONSIVE STYLES (for screens larger than 850px) === */
+@media (min-width: 850px) {
+    .card {
+        flex-direction: row; /* Switch to side-by-side layout */
+        align-items: center;
+        gap: 40px; /* Creates clean space between the text and image */
+    }
+
+    .card-left {
+        flex: 1; /* Allows the text side to take up available space */
+    }
+
+    .card-right {
+        flex: 1;
+        /* The `order` property is passed from the component, which is great! */
+    }
+}
+
+/* For very large screens, add more padding to the container */
+@media (min-width: 1600px) {
+    .card {
+        padding: 0 100px;
+    }
+}
+
+/* Test Backgrounds */
+@media (min-width : 860px) {
+.service-body {
+background-image: 
+url('../../../../public/services/backgrounds/back-2.png'),
+url('../../../../public/services/backgrounds/back-10.png'),
+url('../../../../public/services/backgrounds/back-8.png');
+  
+background-repeat: no-repeat, no-repeat, no-repeat;
+background-position: 9px 160px, right 707px, right 80%;
+}
+.card-right img {
+    width: 440px;
+}
+.card-left-header p {
+    font-size: x-large;
+}
+.card-left-body p {
+    font-size: large;
+}
+.card-left-footer {
+    font-size: medium;
+}
+}
+
+@media (min-width : 1200px) and (max-width:1599px) {
+.service-body {
+background-image: 
+url('../../../../public/services/backgrounds/back-2.png'),
+url('../../../../public/services/backgrounds/back-5.png'),
+url('../../../../public/services/backgrounds/back-8.png');
+  
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-position: 
+    6px 182px,
+    right 532px,
+    right 103%; 
+}
+.card-right img {
+    width: 440px;
+}
+.card-left-header p {
+    font-size: xx-large;
+}
+.card-left-body p {
+    font-size: x-large;
+}
+.card-left-footer {
+    font-size: large;
+}
+}
+
+@media (min-width : 1600px) {
+.card {
+    justify-content: space-evenly;
+    padding: 0 180px;
+}
+.card-right {
+    padding: 0;
+    
+}
+.card-left {
+    width: 40%;
+    padding: 0;
+}
+
+.card-right img {
+    width: 440px;
+}
+.card-left-header p {
+    font-size: xx-large;
+}
+.card-left-body p {
+    font-size: x-large;
+}
+.card-left-footer {
+    font-size: large;
+}
+.service-body {
+background-image: 
+url('../../../../public/services/backgrounds/back-2.png'),
+url('../../../../public/services/backgrounds/back-5.png'),
+url('../../../../public/services/backgrounds/back-5.png'),
+url('../../../../public/services/backgrounds/back-3.png');
+  
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-position: 
+    387px 73px,
+    right 470px,
+    400px 974px,
+    right 108%; 
+}
+}

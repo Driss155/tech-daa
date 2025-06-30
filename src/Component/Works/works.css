@@ -1,0 +1,53 @@
+/* src/Component/Works/works.css */
+
+.work-container {
+  padding: 60px 20px;
+  width: 100%;
+  box-sizing: border-box; /* Ensures padding doesn't add to the width */
+}
+
+.work-header {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 60px auto; /* More space below the header */
+}
+
+.work-header p:first-of-type {
+  font-size: 1rem;
+  color: #666;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.work-header p:nth-of-type(2) {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: darkkhaki;
+  margin: 5px 0 15px 0;
+}
+
+.tech-header-work {
+  margin-bottom: 20px;
+}
+
+.tech-header-work img {
+  width: 30px;
+  margin: 0 5px;
+}
+
+.work-header p:last-of-type {
+  font-size: 1.1rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* === THIS IS THE GRID CONTAINER FIX === */
+.workk {
+  display: grid;
+  /* Creates responsive columns. On large screens, you'll get 3 columns.
+     On smaller screens, it will automatically adjust to 2 or 1. */
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  gap: 2.5rem; /* A slightly larger, cleaner gap */
+  max-width: 1200px; /* Constrains the max width for a clean look */
+  margin: 0 auto; /* Centers the grid on the page */
+}

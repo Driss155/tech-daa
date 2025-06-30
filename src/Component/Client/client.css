@@ -1,0 +1,24 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.client-header {
+    text-align: center;
+    font-weight: bold;
+    line-height: 20px;
+    margin-top: 28px;
+}
+.client-header :nth-child(1) {
+    color: red;
+    font-size: x-large;
+}
+.client-header :nth-child(2) {
+    color: blue;
+    margin-top: 15px;
+}
+
+@media (min-width : 880px) {
+.client-header :nth-child(1) {
+    font-size: xx-large;
+}
+}
