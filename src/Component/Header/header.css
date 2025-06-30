@@ -92,7 +92,7 @@
 
 @media (max-width : 400px) {
 .header-all {
-  margin-bottom: 70px;
+  margin-bottom: 10px;
   gap: 0px;
 }
 .header {
