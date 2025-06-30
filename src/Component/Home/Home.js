@@ -16,7 +16,11 @@ function Home() {
     const projectsRef = useRef(null);
 
     const scrollToSection = (ref) => {
-        ref.current?.scrollIntoView({ behavior: 'smooth' });
+    const topOffset = ref.current.offsetTop - 120;
+    window.scrollTo({
+        top: topOffset,
+        behavior: 'smooth',
+    });
     };
 
     return (
