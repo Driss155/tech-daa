@@ -14,7 +14,6 @@
 }
 .contuct-info-content {
     display: flex;
-    margin-left: -111px;
     justify-content: center;
     gap: 46px;
 }
