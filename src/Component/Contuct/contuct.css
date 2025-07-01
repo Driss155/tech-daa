@@ -20,6 +20,7 @@
 .contuct-info-text {
     position: absolute;
     color: white;
+    margin-left: -27px;
 }
 .contuct-info-text p:nth-child(2) {
     margin-left: -37px;
