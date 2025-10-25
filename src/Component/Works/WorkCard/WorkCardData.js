@@ -41,6 +41,14 @@ const WorkCardData = [
     workCardName: 'Diving Service MA',
     workCardDescription: 'A comprehensive site for a professional maritime and diving services company.'
   },
+    {
+    id: 6,
+    image: '/images/works/project-divingg.png',
+    link: 'https://location.tech-da.com/',
+    workCardTitle: 'Location Voiture Site',
+    workCardName: 'Location Voiture MA',
+    workCardDescription: 'A comprehensive site for a professional maritime and diving services company.'
+  },
 ];
 
 export default WorkCardData;
