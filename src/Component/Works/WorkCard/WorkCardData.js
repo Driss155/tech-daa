@@ -3,7 +3,7 @@
 const WorkCardData = [
   {
     id: 1,
-    image: '/images/works/timelga.png',
+    image: '/images/works/project-sigma.png',
     link: 'https://timelga.com/',
     workCardTitle: 'Timelga Website',
     workCardName: 'Timelga Group',
