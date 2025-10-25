@@ -43,7 +43,7 @@ const WorkCardData = [
   },
     {
     id: 6,
-    image: '/public/images/works/project-divingg.PNG',
+    image: '/images/works/project-divingg.PNG',
     link: 'https://location.tech-da.com/',
     workCardTitle: 'Location Voiture Site',
     workCardName: 'Location Voiture MA',
