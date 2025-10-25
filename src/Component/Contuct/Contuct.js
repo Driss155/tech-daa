@@ -1,8 +1,6 @@
 import React, { useState, useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import './contuct.css';
-// testxc
-// ccc
 
 function Contuct() {
     const form = useRef();
@@ -54,7 +52,7 @@ function Contuct() {
                     <div className='contuct-info-center'>
                         <div className='contuct-info-img'> <img src='/images/contuct/appel-black.svg' alt='phone icon'/> </div>
                         <div className='contuct-info-text'>
-                            <p>+212 772-570811 x</p>
+                            <p>+212 772-570811</p>
                         </div>
                     </div>
                     <div>

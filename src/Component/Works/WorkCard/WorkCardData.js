@@ -3,10 +3,10 @@
 const WorkCardData = [
   {
     id: 1,
-    image: '/images/works/project-sigma.png',
-    link: 'https://group-sigma.com/',
-    workCardTitle: 'Corporate Website',
-    workCardName: 'Group Sigma',
+    image: '/images/works/timelga.png',
+    link: 'https://timelga.com/',
+    workCardTitle: 'Timelga Website',
+    workCardName: 'Timelga Group',
     workCardDescription: 'A professional and modern corporate site for a leading consulting and services group.'
   },
   {
